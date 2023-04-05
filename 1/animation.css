@@ -1,0 +1,54 @@
+@keyframes slide {
+    0%{
+      transform: translate(0,0) ;
+    }
+    30%{
+      transform: translate(30vw, -12vw) rotate(-60deg) scale(.8,.8);
+    }
+    45%{
+        transform: translate(32vw, -14vw) rotate(-80deg) scale(.7,.7);
+      }
+    55% {
+        transform: scale (.55,.55) translate(32vw, -18vw)  rotate(-120deg);
+      }
+    60% {
+      transform: scale (.55,.55) translate(25vw, -26vw)  rotate(-150deg);
+    }
+    95% {
+      transform:  scale(.4, .4) translate(6vw, -54vw) rotate(-165deg);
+    }
+    
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    background: skyblue;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:2%;
+}
+
+.bg{
+    width:14vw;
+    height:20vw;
+    margin-left:20vw;
+}
+.pic1{
+    margin-top:34vw;
+    width: 0px;
+    height: 0px;
+    border-top: 3vw solid transparent;
+    border-left: 7vw solid tomato;
+    border-bottom: 3vw solid transparent;
+}
+.pic1:hover{
+    animation:slide 8s ease-in-out;
+}
+.ground{
+    background:sienna;
+    width:69vw;
+    height:8vw;
+    margin-top:-4vw;
+
+}
